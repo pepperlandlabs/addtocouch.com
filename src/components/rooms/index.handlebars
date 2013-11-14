@@ -1,0 +1,74 @@
+<script type="text/javascript">
+  var AWESM = AWESM || {};
+  AWESM.api_key = '974b948f677df6662eb4a801c8d56e7fe48ae0ba00bf2e2183f40befd69a4409';
+
+  (function() {
+      var js = document.createElement('script'); js.type = 'text/javascript'; js.async = true;
+      js.src = '//widgets.awe.sm/v3/widgets.js?key=' + AWESM.api_key + '&async=true';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(js,s);
+  })();
+</script>
+
+<script type="text/javascript" src="/assets/scripts/jquery.videoBG.js"></script>
+<script type="text/javascript" src="/assets/scripts/homepage.js"></script>
+
+<div id="home">
+        <div id="homenav">
+            <h1>Couch</h1>
+        </div>
+        <div id="social">
+            <div id="tweet"><awesm:tweet href="http://twitter.com/share" class="twitter-share-button" data-url="http://addtocouch.com" data-text="I'm watching videos with my friends in real-time using @AddToCouch!" data-count="horizontal"></awesm:tweet></div>
+            <div id="fb"><awesm:fblike show_faces="false" href="http://www.addtocouch.com" send="false" layout="button_count" width="60"></awesm:fblike></div>
+            <iframe src="http://nodeknockout.com/iframe/extra-hand-sanitzer" frameborder=0 scrolling=no allowtransparency=true width=115 height=25></iframe>
+        </div>
+        <div id="homecontents">
+            <div id="homeheadlines">
+                Watch videos with friends in real-time.<br>
+                Queue up what's next with a tweet.
+            </div>
+            <div id="homeleft">
+                <div id="homestart">
+                    <h3>Start Watching Now</h3>
+                </div>
+                <div id="homeroom">
+                    <p>1. Your hashtag is <a id="assignedhashtag" href="room/{{hash}}">#{{hash}}</a></span>. Include it when adding videos.</p>
+                    <!--<form>
+                        <input type="text" name="hashtag" id="changehashtag" value="#{{hash}}"></input>
+                        <input type="submit" name="savehash" id="savehash" value="Save">
+                    </form>-->
+                </div>
+                <div id="hometweet">
+                    <p>2. Add videos by tweeting @AddToCouch</p>
+                    <textarea>@AddToCouch #{{hash}} http://youtu.be/C_S5cXbXe-4</textarea>
+                    <a href="https://twitter.com/intent/tweet?screen_name=AddToCouch&text=%20%23{{hash}}%20http%3A%2F%2Fyoutu.be%C_S5cXbXe-4"><div class="firsttweet"><img src="http://addtocouch.s3-website-us-west-1.amazonaws.com/assets/images/twitterbirdblue.png" height="20px"><span>Tweet to @AddToCouch</span></div></a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                </div>
+                <div id="homeplay">
+                    <p>3. Videos play here when you tweet them</p>
+                </div>
+            </div>
+            <div id="homeright">
+                <div class="homerightitem">
+                    <div class="homerighticon"><img src="http://addtocouch.s3-website-us-west-1.amazonaws.com/assets/images/screenicon.png"></div>
+                    <div class="homerighttext">
+                        <h3>This is your big screen</h3>
+                        <p>Start by tweeting your first video</p>
+                    </div>
+                </div>
+                <div class="homerightitem">
+                    <div class="homerighticon"><img src="http://addtocouch.s3-website-us-west-1.amazonaws.com/assets/images/tweetphoneicon.png"></div>
+                    <div class="homerighttext">
+                        <h3>Twitter is your remote</h3>
+                        <p>Anyone can add videos with a tweet</p>
+                    </div>
+                </div>
+                <div class="homerightitem">
+                    <div class="homerighticon"><img src="http://addtocouch.s3-website-us-west-1.amazonaws.com/assets/images/globeicon.png"></div>
+                    <div class="homerighttext">
+                        <h3>Friends anywhere can join</h3>
+                        <p>Just visit: AddToCouch.com/room/{{hash}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

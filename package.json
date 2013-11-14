@@ -1,0 +1,35 @@
+{
+  "name": "add-to-couch",
+  "version": "0.0.0",
+  "scripts": {
+    "test": "./node_modules/.bin/grunt test",
+    "build": "./node_modules/.bin/grunt build",
+    "postinstall": "./node_modules/.bin/bower install",
+    "start": "node server.js"
+  },
+  "devDependencies": {
+    "connect": "~2.9.1"
+  },
+  "dependencies": {
+    "async": "~0.2.9",
+    "bower": "~1.2.7",
+    "concat": "~0.2.4",
+    "clean-css": "~1.0.10",
+    "glob": "~3.2.6",
+    "grunt": "~0.4.1",
+    "grunt-contrib-handlebars": "~0.5.6",
+    "grunt-contrib-jasmine": "~0.5.2",
+    "grunt-contrib-requirejs": "~0.4.1",
+    "grunt-contrib-watch": "~0.3.1",
+    "grunt-notify": "~0.1.4",
+    "grunt-curl": "~0.4.0",
+    "grunt-shell": "~0.2.1",
+    "handlebars": "~1.0.12",
+    "js-yaml": "~2.0.3",
+    "simply-deferred": "~2.4.0",
+    "shelljs": "~0.1.4",
+    "underscore": "~1.4.4",
+    "grunt-cli": "~0.1.9",
+    "grunt-s3": "~0.2.0-alpha.3"
+  }
+}
