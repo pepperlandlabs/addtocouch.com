@@ -1,0 +1,7 @@
+/* line 1, ../../sass/base/layout.scss */
+.l-right-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}

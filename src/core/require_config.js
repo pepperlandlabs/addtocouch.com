@@ -1,6 +1,6 @@
 var requireConfig = {
     'waitSeconds': 2,
-    'baseUrl': 'http://addtocouch.s3-website-us-west-1.amazonaws.com/src/',
+    'baseUrl': 'src/',
 
     'paths' : {
         'backbone': '../bower_components/backbone/backbone',

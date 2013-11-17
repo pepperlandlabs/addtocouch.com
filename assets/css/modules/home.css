@@ -1,0 +1,217 @@
+/* line 1, ../../sass/modules/home.scss */
+#home {
+  background-color: rgba(22, 160, 133, 0.95);
+  width: 100%;
+  min-height: 100%;
+  color: #fff;
+}
+/* line 7, ../../sass/modules/home.scss */
+#home h3 {
+  margin-bottom: 24px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 24px;
+}
+
+/* line 14, ../../sass/modules/home.scss */
+#homenav {
+  font-family: 'Crete Round', sans-serif;
+  padding: 1px 20px;
+}
+
+/* line 18, ../../sass/modules/home.scss */
+#homenav h1 {
+  font-size: 50px;
+  margin-top: 8px;
+}
+
+/* line 22, ../../sass/modules/home.scss */
+#social {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  width: 500px;
+}
+/* line 28, ../../sass/modules/home.scss */
+#social > * {
+  float: right;
+}
+/* line 32, ../../sass/modules/home.scss */
+#social iframe {
+  margin-top: -5px;
+}
+/* line 36, ../../sass/modules/home.scss */
+#social #twitter, #social #fb {
+  margin-top: 2px;
+}
+
+/* line 40, ../../sass/modules/home.scss */
+#fb, #tweet {
+  float: right;
+}
+
+/* line 43, ../../sass/modules/home.scss */
+#fb {
+  margin-right: 20px;
+}
+
+/* line 46, ../../sass/modules/home.scss */
+#tweet {
+  margin-right: 0px;
+}
+
+/* line 49, ../../sass/modules/home.scss */
+#homecontents {
+  width: 1040px;
+  margin: auto;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* line 54, ../../sass/modules/home.scss */
+#homeheadlines {
+  text-align: center;
+  font-family: 'Crete Round', sans-serif;
+  font-size: 36px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+/* line 61, ../../sass/modules/home.scss */
+#homeleft {
+  float: left;
+  width: 50%;
+  height: 360px;
+}
+
+/* line 66, ../../sass/modules/home.scss */
+#homeleft p {
+  font-size: 20px;
+}
+
+/* line 69, ../../sass/modules/home.scss */
+#homeright {
+  float: left;
+  padding-left: 40px;
+  border-left: 2px solid #eaeaea;
+  width: 470px;
+}
+
+/* line 75, ../../sass/modules/home.scss */
+.homerightitem {
+  height: 120px;
+}
+
+/* line 78, ../../sass/modules/home.scss */
+#homeright h3 {
+  font-family: 'Crete Round', sans-serif;
+  font-size: 24px;
+}
+
+/* line 82, ../../sass/modules/home.scss */
+#homeright p {
+  margin-top: -12px;
+  color: #ddd;
+}
+
+/* line 86, ../../sass/modules/home.scss */
+.homerighticon, .homerighttext {
+  float: left;
+}
+
+/* line 89, ../../sass/modules/home.scss */
+.homerighttext {
+  margin-left: 20px;
+  margin-top: -8px;
+  width: 350px;
+}
+
+/* line 94, ../../sass/modules/home.scss */
+#assignedhashtag {
+  font-weight: bold;
+  background-color: #d35400;
+  font-size: 26px;
+}
+
+/*
+#changehashtag {
+    height:40px;
+    width:260px;
+    font-size:16px;
+    xxborder:2px solid #dadada;
+    border:none;
+    padding:5px;
+}
+
+#changehashtag:focus {
+    outline: none;
+    box-shadow:inset 0 0 2px 2px #d35400;
+}
+
+#savehash {
+    background: #d35400;
+    border: none;
+    height:40px;
+    margin-left:-6px;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 7px 28px;
+}
+#savehash:hover {
+    background: #e67e22;
+}
+*/
+/* line 128, ../../sass/modules/home.scss */
+textarea {
+  width: 460px;
+  height: 88px;
+  border: none;
+  font-size: 26px;
+  padding: 8px;
+  line-height: 1.4em;
+}
+
+/* line 136, ../../sass/modules/home.scss */
+textarea:focus {
+  outline: none;
+  box-shadow: inset 0 0 2px 2px #d35400;
+}
+
+/* line 140, ../../sass/modules/home.scss */
+.firsttweet {
+  width: 440px;
+  height: 30px;
+  background-color: #eaeaea;
+  text-align: center;
+  padding: 10px;
+  color: #000;
+  font-size: 18px;
+}
+
+/* line 149, ../../sass/modules/home.scss */
+.firsttweet:hover {
+  background-color: #bdc3c7;
+}
+
+/* line 152, ../../sass/modules/home.scss */
+.firsttweet span {
+  margin-top: -20px;
+  font-family: gotham, helvetica, sans-serif;
+}
+
+/* line 156, ../../sass/modules/home.scss */
+#homeleft a {
+  text-decoration: none;
+}
+
+/* line 159, ../../sass/modules/home.scss */
+#homeleft p {
+  margin-bottom: 4px;
+}
+
+/* line 162, ../../sass/modules/home.scss */
+#homeleft h3 {
+  font-family: 'Crete Round', sans-serif;
+  font-size: 24px;
+  margin-top: 0px;
+}
