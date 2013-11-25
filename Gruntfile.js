@@ -13,7 +13,6 @@ module.exports = function (grunt) {
         Deferred = require('simply-deferred').Deferred,
         when = require('simply-deferred').when;
     // requirejs = require('requirejs');
-
     grunt.initConfig({
         pkg: pkg,
         aws: aws,
