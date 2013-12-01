@@ -10,8 +10,11 @@ define(function(require) {
         PlaylistCollection = require('entities/playlist_collection'),
         IndexView = require('components/rooms/index_view'),
         ViewLayout = require('components/rooms/view_layout'),
+        RemoteViewLayout = require('components/rooms/remote_layout'),
         HeaderView = require('components/rooms/header_view'),
+        FooterView = require('components/rooms/footer_view'),
         PlaylistView = require('components/playlist/index_view'),
+        SimplePlaylistView = require('components/playlist/simple_playlist'),
         VideoPlayer = require('components/video/view'),
 
         roomController = Marionette.Controller.extend({
@@ -51,6 +54,41 @@ define(function(require) {
 
                 app.on('playlist:get', goToView);
                 app.on('playlist:add', goToView);
+            },
+
+            remote: function(hash) {
+                this.cleanup();
+
+                var app = Application.getInstance(),
+                    playlistCollection = new PlaylistCollection(),
+                    room = new Room({
+                        hash: hash,
+                        collection: playlistCollection
+                    }),
+                    playlistView = new SimplePlaylistView({
+                        model: room,
+                        collection: playlistCollection
+                    });
+
+                app.on('playlist:remove', function(keyName) {
+                    playlistCollection.removeByKeyName(keyName, {silent: true});
+                });
+
+                app.on('playlist:get', function(content) {
+                    playlistCollection.add(_.toArray(content));
+                });
+
+                app.on('playlist:add', function(content) {
+                    playlistCollection.add(content);
+                });
+
+                this.currentView = new RemoteViewLayout();
+
+                $(app.request('$el')).append(
+                    this.currentView.render().$el
+                );
+
+                this.currentView.playlist.show(playlistView);
             },
 
             view: function(hash) {
@@ -94,6 +132,10 @@ define(function(require) {
                 );
 
                 this.currentView.header.show(new HeaderView({
+                    model: room
+                }));
+
+                this.currentView.footer.show(new FooterView({
                     model: room
                 }));
 
