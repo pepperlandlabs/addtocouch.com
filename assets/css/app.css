@@ -160,13 +160,13 @@ ol {
 
 /* line 110, ../sass/modules/queue.scss */
 .queue__item {
-  width: 400px;
-  height: 225px;
+  width: 100%;
+  height: 200px;
   background-size: cover;
   position: relative;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 200;
-  background-position: 0px -40px;
+  font-family: 'helvetica neue', helvetica, sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
 
 /* line 120, ../sass/modules/queue.scss */
@@ -197,15 +197,35 @@ ol {
 
 /* line 141, ../sass/modules/queue.scss */
 .queue__item__title {
-  width: 380px;
-  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.9)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+  /* IE6-9 */
   position: absolute;
   bottom: 0;
-  padding: 10px;
-  font-size: 18px;
+  padding: 0px 0px;
+  font-size: 16px;
 }
 
-/* line 150, ../sass/modules/queue.scss */
+/* line 156, ../sass/modules/queue.scss */
+.queue__item__title p {
+  padding: 0 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 162, ../sass/modules/queue.scss */
 .queue__open {
   position: absolute;
   top: 20px;
@@ -216,22 +236,22 @@ ol {
   cursor: pointer;
 }
 
-/* line 161, ../sass/modules/queue.scss */
+/* line 173, ../sass/modules/queue.scss */
 .queue__open:visited {
   text-decoration: none;
 }
 
-/* line 165, ../sass/modules/queue.scss */
+/* line 177, ../sass/modules/queue.scss */
 .queue__open:hover {
   text-decoration: none;
 }
 
-/* line 169, ../sass/modules/queue.scss */
+/* line 181, ../sass/modules/queue.scss */
 .queue__open:active {
   text-decoration: none;
 }
 
-/* line 173, ../sass/modules/queue.scss */
+/* line 185, ../sass/modules/queue.scss */
 .queue__count {
   font-size: 26px;
   padding: 26px 0 0 0;
