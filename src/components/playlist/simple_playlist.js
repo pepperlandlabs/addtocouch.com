@@ -25,7 +25,7 @@ define(function(require) {
             type: 'handlebars',
             template: require('hb!components/playlist/simple_queue_layout.handlebars')
         },
-
+/*
         showPlaylist: function() {
             this.$el.find('.queue__open').fadeOut(100);
 
@@ -53,7 +53,7 @@ define(function(require) {
                 }
             );
         },
-
+*/
         updatePlaylistCounter: function(count) {
             this.$('.js-playlist-count').text(count);
         }

@@ -32,8 +32,97 @@
 }
 
 /* line 31, ../../sass/modules/queue.scss */
+#mobileheader {
+  background-color: #111;
+  color: #ecf0f1;
+  margin: auto;
+  font-family: 'Crete Round', sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  text-align: left;
+}
+
+/* line 40, ../../sass/modules/queue.scss */
+#mobilecontrols {
+  font-family: 'helvetica neue', helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  background-color: #ecf0f1;
+  text-align: center;
+  height: 50px;
+  color: #111;
+}
+
+/* line 49, ../../sass/modules/queue.scss */
+#mobilecontrols a {
+  color: #16a085;
+  text-decoration: none;
+}
+
+/* line 53, ../../sass/modules/queue.scss */
+#mobilenavhowitworks {
+  float: left;
+  width: 50%;
+  padding: 8px 0px;
+  xxheight: 80px;
+}
+
+/* line 59, ../../sass/modules/queue.scss */
+#mobilenavhowitworks #howbutton {
+  padding: 8px 2px;
+  color: #3498db;
+  border: 1px solid #3498db;
+  border-radius: 6px;
+  width: 110px;
+  float: right;
+  margin-right: 6px;
+  font-weight: 300;
+}
+
+/* line 69, ../../sass/modules/queue.scss */
+#mobilenavqueue {
+  float: left;
+  width: 50%;
+  font-size: 24px;
+  text-align: left;
+  padding: 4px 0px;
+}
+
+/* line 76, ../../sass/modules/queue.scss */
+#mobilenavqueue h4 {
+  padding-left: 10px;
+  padding-top: 4px;
+  margin: 0;
+  font-family: "crete round", serif;
+  font-weight: 400;
+  font-size: 26px;
+  color: #16a085;
+}
+
+/* line 85, ../../sass/modules/queue.scss */
+#mobilenavback {
+  float: left;
+  font-size: 24px;
+  text-align: left;
+}
+
+/* line 90, ../../sass/modules/queue.scss */
+#mobilenavback h4 {
+  margin: 0;
+  padding: 10px 10px;
+  font-family: 'helvetica neue';
+  font-weight: 300;
+  color: #3498db;
+}
+
+/* line 97, ../../sass/modules/queue.scss */
+.mobilenavactive {
+  background-color: #666;
+}
+
+/* line 101, ../../sass/modules/queue.scss */
 .queue__list {
-  position: absolute;
+  xxposition: absolute;
   top: 80px;
   bottom: 0;
   left: 0;
@@ -41,7 +130,7 @@
   overflow-y: auto;
 }
 
-/* line 40, ../../sass/modules/queue.scss */
+/* line 110, ../../sass/modules/queue.scss */
 .queue__item {
   width: 400px;
   height: 225px;
@@ -52,33 +141,33 @@
   background-position: 0px -40px;
 }
 
-/* line 50, ../../sass/modules/queue.scss */
+/* line 120, ../../sass/modules/queue.scss */
 .queue__item__user-avatar, .queue__item__delete, .queue__item__block {
   width: 60px;
   height: 60px;
 }
 
-/* line 55, ../../sass/modules/queue.scss */
+/* line 125, ../../sass/modules/queue.scss */
 .queue__item__delete {
   background-color: #c0392b;
 }
 
-/* line 59, ../../sass/modules/queue.scss */
+/* line 129, ../../sass/modules/queue.scss */
 .queue__item__delete:hover {
   background-color: #e74c3c;
 }
 
-/* line 63, ../../sass/modules/queue.scss */
+/* line 133, ../../sass/modules/queue.scss */
 .queue__item__block {
   background-color: #2c3e50;
 }
 
-/* line 67, ../../sass/modules/queue.scss */
+/* line 137, ../../sass/modules/queue.scss */
 .queue__item__block:hover {
   background-color: #34495e;
 }
 
-/* line 71, ../../sass/modules/queue.scss */
+/* line 141, ../../sass/modules/queue.scss */
 .queue__item__title {
   width: 380px;
   background-color: rgba(0, 0, 0, 0.8);
@@ -88,7 +177,7 @@
   font-size: 18px;
 }
 
-/* line 80, ../../sass/modules/queue.scss */
+/* line 150, ../../sass/modules/queue.scss */
 .queue__open {
   position: absolute;
   top: 20px;
@@ -99,22 +188,22 @@
   cursor: pointer;
 }
 
-/* line 91, ../../sass/modules/queue.scss */
+/* line 161, ../../sass/modules/queue.scss */
 .queue__open:visited {
   text-decoration: none;
 }
 
-/* line 95, ../../sass/modules/queue.scss */
+/* line 165, ../../sass/modules/queue.scss */
 .queue__open:hover {
   text-decoration: none;
 }
 
-/* line 99, ../../sass/modules/queue.scss */
+/* line 169, ../../sass/modules/queue.scss */
 .queue__open:active {
   text-decoration: none;
 }
 
-/* line 103, ../../sass/modules/queue.scss */
+/* line 173, ../../sass/modules/queue.scss */
 .queue__count {
   font-size: 26px;
   padding: 26px 0 0 0;
