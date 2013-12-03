@@ -1,7 +1,7 @@
-<section class="simple__queue">
+<section class="simple__queue" id="simple__queue" style="display:block;">
     <div id="mobilecontrols">
         <div class="mobilenav" id="mobilenavqueue"><h4>Couch</h4></div>
-        <!--<a href="mobileweb.html" data-transition="slide"><div class="mobilenav" id="mobilenavhowitworks"><div id="howbutton">how it works</div></div></a>-->
+        <div class="mobilenav" id="mobilenavhowitworks" ><div id="howbutton" onclick = "replace('simple__queue','simple__howitworks')">how it works</div></div>
     </div>
     <div id="mobileheader">
         @AddToCouch #{{hash}}
@@ -9,3 +9,32 @@
     <ol class="queue__list js-playlist-videos">
     </ol>
 </section>
+<section class="simple__howitworks" id="simple__howitworks" style="display:none;">
+	<div id="mobilecontrols">
+        <div class="mobilenav" id="mobilenavback" onclick = "replace('simple__howitworks','simple__queue')"><h4>back</h4></div>
+    </div>
+	<div id="mobilehowitworks">
+        <div id="howicon"><img src="/assets/images/tweettv.png" width="50%"></div>
+        <div id="howtitle">Couch is a YouTube jukebox powered by your tweets</div>
+        <div class="howsection" id="tweetsection">
+            <h3><span class="icon-plus" style="color:#3498db;"></span> &nbsp;To add a video, simply tweet:</h3>
+            <textarea>@AddToCouch #slipperyeel https://www.youtube.com/watch?v=picivHAlVDg</textarea>
+            <div id="twitterbutton">Tweet to @AddToCouch</div>
+        </div>
+        <div class="howsection" id="suggestedsection">
+            <h3><span class="icon-trophy" style="color:#f1c40f;"></span> &nbsp;To see suggested videos, follow:</h3>
+            <div id="followbutton"><a href="https://twitter.com/AddToCouch" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @AddToCouch</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+        </div>
+        <div class="howsection" id="watchalongsection">
+            <h3><span class="icon-user-add" style="color:#e74c3c;"></span> &nbsp;Friends anywhere can play along at:</h3>
+            <div id="friendsurl">AddToCouch.com/room/{{hash}}</div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+function replace( hide, show ) {
+  document.getElementById(hide).style.display="none";
+  document.getElementById(show).style.display="block";
+}
+</script>

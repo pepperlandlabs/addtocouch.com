@@ -31,7 +31,9 @@
     padding-left: 120px;
     float: left;
 }
-
+.mobile {
+    background-color:#f9f9f9;
+}
 #mobileheader {
     background-color: #111;
     color:#ecf0f1;
@@ -100,6 +102,65 @@
 }
 .mobilenavactive {
     background-color: #666;
+}
+#mobilehowitworks {
+    color:#111;
+}
+#mobilehowitworks h3 {
+    margin:1em;
+}
+#howicon {
+    margin-top:20px;
+    text-align: center;
+}
+#howtitle {
+    font-family: 'Crete Round', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    margin-top:20px;
+    padding: 0px 10px;
+    color: #111;
+}
+.howsection {
+    width:100%;
+    padding:1px 0px 20px;
+}
+#tweetsection {
+    margin-top:20px;
+}
+.howsection h3 {
+    margin-left:10px;
+    font-family:'helvetica', sans-serif;
+    font-weight:300;
+    font-size: 16px;
+    color:#111;
+}
+.howsection textarea, .howsection textarea.ui-input-text {
+    width:94%;
+    margin-left:10px;
+    margin-right: 10px;
+    margin-bottom:0px;
+    font-size:14px;
+    border-radius: 0px;
+    border:none;
+}
+#twitterbutton {
+    width: 94%;
+    margin-left:10px;
+    margin-right: 10px;
+    background-color: #bdc3c7;
+    text-align: center;
+    padding:10px 0px;
+    font-family: 'helvetica', sans-serif;
+    font-weight: 200;
+}
+#followbutton {
+    text-align: center;
+}
+#friendsurl {
+    font-family: 'Crete Round', sans-serif;
+    font-size: 18px;
+    text-align: center;
 }
 
 .queue__list {
