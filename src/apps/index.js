@@ -19,8 +19,7 @@ define(function(require) {
         controller: roomController,
         appRoutes: {
             '': 'index',
-            'room/:id': 'view',
-            'remote/:id': 'remote'
+            'room/:id': 'view'
         }
     });
 

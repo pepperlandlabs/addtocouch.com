@@ -14,8 +14,7 @@ define(function(require) {
         regions: {
             header: '.js-header',
             playlist: '.js-playlist',
-            content: '.js-video',
-            footer: '.js-footer'
+            content: '.js-video'
         },
 
         render: function() {
