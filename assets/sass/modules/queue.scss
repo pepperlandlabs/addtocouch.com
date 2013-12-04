@@ -182,6 +182,13 @@
     letter-spacing: 1px;
 }
 
+.queue__avatar__item {
+    xxwidth:100%;
+    height:60px;
+    background-size:cover;
+    position:relative;
+}
+
 .queue__item__user-avatar, .queue__item__delete, .queue__item__block {
     width:60px;
     height:60px;
