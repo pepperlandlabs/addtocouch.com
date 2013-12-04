@@ -11,6 +11,7 @@ define(function(require) {
         IndexView = require('components/rooms/index_view'),
         AvatarView = require('components/rooms/avatar_view'),
         ViewLayout = require('components/rooms/view_layout'),
+        AvatarLayout = require('components/playlist/queue_avatar_layout'),
         RemoteViewLayout = require('components/rooms/remote_layout'),
         HeaderView = require('components/rooms/header_view'),
         FooterView = require('components/rooms/footer_view'),
@@ -110,7 +111,7 @@ define(function(require) {
                         model: room,
                         controller: playlistCollection
                     }),
-                    playlistView = new PlaylistView({
+                    playlistView = new AvatarView({
                         model: room,
                         collection: playlistCollection
                     }),
@@ -157,7 +158,11 @@ define(function(require) {
 
                 this.currentView.playlist.show(playlistView);
 
+<<<<<<< HEAD
                 this.currentView.avatar.show(avatarView);
+=======
+                
+>>>>>>> 5030e9d... Beginnings of avatar-based queue, with /remote reintegrated
             }
 
         });
