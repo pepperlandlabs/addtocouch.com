@@ -9,13 +9,11 @@ define(function(require) {
         Room = require('entities/room'),
         PlaylistCollection = require('entities/playlist_collection'),
         IndexView = require('components/rooms/index_view'),
-        AvatarView = require('components/rooms/avatar_view'),
         ViewLayout = require('components/rooms/view_layout'),
         RemoteViewLayout = require('components/rooms/remote_layout'),
         HeaderView = require('components/rooms/header_view'),
         FooterView = require('components/rooms/footer_view'),
         PlaylistView = require('components/playlist/index_view'),
-        AvatarView = require('components/playlist/avatar_view'),
         SimplePlaylistView = require('components/playlist/simple_playlist'),
         VideoPlayer = require('components/video/view'),
 
@@ -93,7 +91,6 @@ define(function(require) {
                 this.currentView.playlist.show(playlistView);
             },
 
-
             view: function(hash) {
                 this.cleanup();
 
@@ -108,10 +105,6 @@ define(function(require) {
                         controller: playlistCollection
                     }),
                     playlistView = new PlaylistView({
-                        model: room,
-                        collection: playlistCollection
-                    }),
-                    avatarView = new AvatarView ({
                         model: room,
                         collection: playlistCollection
                     });
@@ -138,19 +131,17 @@ define(function(require) {
                     this.currentView.render().$el
                 );
 
-                this.currentView.footer.show(new FooterView({
+                this.currentView.header.show(new HeaderView({
                     model: room
                 }));
 
-                this.currentView.header.show(new HeaderView({
+                this.currentView.footer.show(new FooterView({
                     model: room
                 }));
 
                 this.currentView.content.show(videoPlayer);
 
                 this.currentView.playlist.show(playlistView);
-
-                this.currentView.avatar.show(avatarView);
             }
 
         });
