@@ -6,17 +6,15 @@ define(function(require) {
 
     return Marionette.CompositeView.extend({
 
-<<<<<<< HEAD
         /*events: {
             'click .js-queue-open': 'showPlaylist',
             'click .js-queue-close': 'hidePlaylist'
         },*/
-=======
+
         events: {
             'click .js-queue-open': 'showPlaylist',
             'click .js-queue-close': 'hidePlaylist'
         },
->>>>>>> 5030e9d... Beginnings of avatar-based queue, with /remote reintegrated
 
         modelEvents: {
             'updateCount': 'updatePlaylistCounter'
@@ -24,21 +22,15 @@ define(function(require) {
 
         tagName: 'section',
 
-<<<<<<< HEAD
-        itemView: require('components/playlist/queue_avatar_view'),
-=======
+//        itemView: require('components/playlist/queue_avatar_view'),
         itemView: require('components/playlist/queue_avatar_item_view'),
->>>>>>> 5030e9d... Beginnings of avatar-based queue, with /remote reintegrated
 
         itemViewContainer: '.js-playlist-videos',
 
         template: {
             type: 'handlebars',
-<<<<<<< HEAD
-            template: require('hb!components/playlist/queue_layout_avatars.handlebars')
-=======
+//            template: require('hb!components/playlist/queue_layout_avatars.handlebars')
             template: require('hb!components/playlist/queue_avatar_layout.handlebars')
->>>>>>> 5030e9d... Beginnings of avatar-based queue, with /remote reintegrated
         },
 /*
         showPlaylist: function() {
