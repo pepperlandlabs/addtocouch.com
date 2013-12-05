@@ -94,10 +94,7 @@ define(function(require) {
                 this.currentView.playlist.show(playlistView);
             },
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 2b25692... Attempts at changing the "up next" in a room to avatars
             view: function(hash) {
                 this.cleanup();
 
@@ -157,12 +154,6 @@ define(function(require) {
                 this.currentView.content.show(videoPlayer);
 
                 this.currentView.playlist.show(playlistView);
-
-<<<<<<< HEAD
-                this.currentView.avatar.show(avatarView);
-=======
-                
->>>>>>> 5030e9d... Beginnings of avatar-based queue, with /remote reintegrated
             }
 
         });
