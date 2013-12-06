@@ -25,13 +25,13 @@ define(function(require) {
             type: 'handlebars',
             template: require('hb!components/playlist/queue_avatar_layout.handlebars')
         },
-/*
+
         showPlaylist: function() {
             this.$el.find('.queue__open').fadeOut(100);
 
             this.$el.find('.queue').animate({
                     'right': 0,
-                    'width': 400
+                    'width': 60
                 },
                 500
             );
@@ -53,7 +53,7 @@ define(function(require) {
                 }
             );
         },
-*/
+
         updatePlaylistCounter: function(count) {
             this.$('.js-playlist-count').text(count);
         }
