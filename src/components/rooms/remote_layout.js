@@ -3,7 +3,7 @@ define(function(require) {
 
     var Marionette = require('marionette'),
 
-        layoutTemplate = require('hb!components/rooms/view_layout.handlebars');
+        layoutTemplate = require('hb!components/rooms/remote_layout.handlebars');
 
     return Marionette.Layout.extend({
 
@@ -14,7 +14,6 @@ define(function(require) {
         regions: {
             header: '.js-header',
             playlist: '.js-playlist',
-            content: '.js-video',
             footer: '.js-footer'
         },
 
