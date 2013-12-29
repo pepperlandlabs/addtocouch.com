@@ -59,8 +59,11 @@ define([
         onNewContent: function(content) {
             console.log('onNewContent');
             console.log(content);
-
-            Application.getInstance().trigger('playlist:add', content);
+            if (content.type === 'skip') {
+                Application.getInstance().trigger('playlist:skip', content);
+            } else {
+                Application.getInstance().trigger('playlist:add', content);
+            }
         },
 
         onRemoveContent: function(keyName) {

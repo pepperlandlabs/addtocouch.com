@@ -116,11 +116,22 @@ define(function(require) {
                 });
 
                 app.on('playlist:get', function(content) {
-                    playlistCollection.add(_.toArray(content));
+                    var allContent = _.toArray(content);
+
+                    // Only add video commands
+                    var videos = _.filter(allContent, function(c) {
+                        return c.type !== 'skip';
+                    });
+
+                    playlistCollection.add(videos);
                 });
 
                 app.on('playlist:add', function(content) {
                     playlistCollection.add(content);
+                });
+
+                app.on('playlist:skip', function(content) {
+                    videoPlayer.playerEnd();
                 });
 
                 videoPlayer.on('video:removed', function(id) {
@@ -145,7 +156,7 @@ define(function(require) {
 
                 this.currentView.playlist.show(playlistView);
 
-                
+
             }
 
         });
